@@ -81,3 +81,18 @@ Content-Type: application/json
 | GET | /student/1/teachers/A | Read. Return teacher A of student 1 (200) |
 | POST | /student/1/courses | Create. Return newly created course of student 1 (201) |
 | PUT | /student/1/teachers/A | Edit. Edit the relationship or data between student 1 and teacher A. (202) |
+
+### Avoid
+
+* Avoid using WSDL/SOAP, method based url and methods.
+
+**Don'ts**
+```
+GET /student/waiveAtTeacher/
+Accept: application/json;
+```
+
+```
+POST /student/askToDrinkABeer/2/
+Accept: application/json;
+```
